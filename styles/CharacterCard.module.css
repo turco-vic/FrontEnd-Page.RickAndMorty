@@ -1,0 +1,19 @@
+.card{
+    width: 275px;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+    background-color: 	#c9c9c9f5;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+}

@@ -1,7 +1,10 @@
-import "../styles/globals.css";
+import "./globals.css";
+
 export const metadata = {
-  title: "My First NextJS App",
+  title: "Rick And Morty",
+  description: "Meu primeiro consumo de API grátis!",
 };
+
 export default function RootLayout({ children }) {
   return (
     <html>
