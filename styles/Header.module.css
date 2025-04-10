@@ -10,6 +10,7 @@
     border-radius: 10px;
     transition: transform 0.3s;
     margin-bottom: 4rem;
+    border: solid 2px #24332c;
 }
 
 .container:hover{
@@ -19,14 +20,34 @@
 .title {
     font-size: 2rem;
     font-weight: bold;
-    color: #000000;
+    color: #24332c;
     margin-left: 1rem;
     margin-bottom: 0.3rem;
+    background: linear-gradient(45deg, #4da602, #24332c, #4da602);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .description {
+    display: flex;
     font-size: 1rem;
-    color: #666666;
+    color: #24332c;
     margin-left: 1rem;
     letter-spacing: 4px;
+    background: linear-gradient(45deg, #4da602, #24332c, #4da602);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
 }

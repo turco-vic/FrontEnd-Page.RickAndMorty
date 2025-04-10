@@ -5,8 +5,9 @@
     margin: 1rem;
     text-align: center;
     transition: transform 0.3s;
-    background-color: 	#c9c9c9f5;
+    background-color: 	#ffffff;
     cursor: pointer;
+    border: solid 2px #24332c;
 }
 
 .card:hover{
@@ -16,4 +17,43 @@
 .avatar {
     width: 100px;
     border-radius: 50%;
+    border: solid 2px #24332c;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #4da602, #24332c, #4da602);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description {
+    display: flex;
+    text-align: justify;
+}
+
+.info {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #4da602, #24332c, #4da602);
+    background-size: 400% 100%;
+    text-align: justify;
+    animation: degrade 5s linear infinite alternate;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
 }
