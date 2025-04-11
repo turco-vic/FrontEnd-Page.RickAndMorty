@@ -46,6 +46,7 @@
     animation: degrade 5s linear infinite alternate;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: 0 5px 0px 0px;
 
 }
 

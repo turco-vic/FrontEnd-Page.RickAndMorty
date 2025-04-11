@@ -1,16 +1,17 @@
 .container {
-    width: 100%;
+    width: 80%;
     height: 7rem;
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
     margin: 1rem;
     border-radius: 10px;
     transition: transform 0.3s;
     margin-top: 4rem;
     border: solid 2px #24332c;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
 .container:hover{
@@ -18,6 +19,20 @@
 }
 
 .copy {
+    color: #24332c;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #4da602, #24332c, #4da602);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.author {
     color: #24332c;
     font-size: 1rem;
     margin-left: 1rem;
