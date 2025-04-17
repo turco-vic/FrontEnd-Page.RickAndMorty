@@ -9,7 +9,7 @@
     transition: transform 0.3s;
     margin-top: 4rem;
     border: solid 2px #24332c;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
 }
@@ -22,7 +22,7 @@
     color: #24332c;
     font-size: 0.8rem;
     margin-left: 1rem;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     font-weight: bold;
     background: linear-gradient(45deg, #4da602, #24332c, #4da602);
     background-size: 400% 100%;

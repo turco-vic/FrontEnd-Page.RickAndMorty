@@ -1,9 +1,9 @@
 import styles from "../styles/CharacterCard.module.css";
 
-export default function CharacterCard({ character }) {
+export default function CharacterCard({ character, onClick }) {
     console.log(character)
     return (
-        <div className={styles.card}>
+        <div className={styles.card} onClick={onClick}>
             <div className={styles.image}>
                 <img
                     src={character.image}
@@ -19,4 +19,4 @@ export default function CharacterCard({ character }) {
             <p className={styles.description}> <span className={styles.info}>Location: </span>{character.location.name}</p>
         </div>
     )
-}
+};

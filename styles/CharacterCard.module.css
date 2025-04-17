@@ -34,11 +34,13 @@
 .description {
     display: flex;
     text-align: justify;
+    align-items: center;
 }
 
 .info {
     display: flex;
-    font-size: 1.2rem;
+    align-items: center;
+    font-size: 1.3rem;
     font-weight: bold;
     background: linear-gradient(45deg, #4da602, #24332c, #4da602);
     background-size: 400% 100%;
