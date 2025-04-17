@@ -40,7 +40,7 @@ export default function Home() {
     }, []);
 
     const handleCardClick = (name) => {
-        toast.info(`Você clicou no personagem: ${name}`, {
+        toast.info(`you clicked on the character: ${name}`, {
         });
     }
 
@@ -60,14 +60,12 @@ export default function Home() {
                         onChange={(e) => setSearch(e.target.value)}
                         className={styles.searchInput}
                     />
-
                     <button onClick={() => {
                         fetchCharacters(search);
                     }} className={styles.buttonSearch}
                     >
                         Search
                     </button>
-
                     <button
                         onClick={() => {
                             fetchCharacters();
@@ -76,13 +74,14 @@ export default function Home() {
                     >
                         Reset
                     </button>
-                    </div>
+                </div>
+                <div className={styles.notFound}>
+                    {notFound && (<h1 className={styles.notFound}>Character not found</h1>)}
+                </div>
+                {characters.map((char) => (
+                    <CharacterCard key={char.id} character={char} onClick={() => handleCardClick(char.name)} />
+                ))}
 
-                    {notFound && ( <h1 className={styles.notFound}>Character not found</h1>)}
-                    {characters.map((char) => (
-                        <CharacterCard key={char.id} character={char} onClick={() => handleCardClick(char.name)} />
-                    ))}
-                
                 <Footer />
             </div>
         </div>
