@@ -47,7 +47,7 @@ export default function Home() {
     return (
         <div className={styles.container}>
             <ToastContainer position="top-right"
-                autoClose={3000}
+                autoClose={1000}
                 theme="dark"
             />
             <div className={styles.content}>
