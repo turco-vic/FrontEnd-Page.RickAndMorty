@@ -1,11 +1,13 @@
 .container {
-    width: 100%;
-    height: 100vh;
     background-image: url("/greenspace4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .content {
-    background-image: url("/greenspace4.jpg");
     display: flex;
     flex-direction: column;
     align-items: center;
