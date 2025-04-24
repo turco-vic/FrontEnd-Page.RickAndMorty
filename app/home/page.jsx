@@ -4,7 +4,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import styles from "./Home.module.css"
-import CharacterCard from "../../Components/CharacterCard"
+import CharacterCard from "../../components/CharacterCard"
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Loader from "../../components/Loader";
