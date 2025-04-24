@@ -1,7 +1,7 @@
 .card{
     width: 275px;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 25px;
     margin: 1rem;
     text-align: center;
     transition: transform 0.3s;

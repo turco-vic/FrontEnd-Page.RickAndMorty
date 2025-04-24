@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.image {    
+    border-radius: 50%;
+}
+
+.message {
+    padding: 1.25rem;
+    border-radius: 25px;
+    color: #ffffff;
+}
