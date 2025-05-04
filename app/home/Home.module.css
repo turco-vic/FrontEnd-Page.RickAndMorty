@@ -1,6 +1,7 @@
 .container {
     width: 100%;
     background-image: url("/greenspace4.jpg");
+    min-height: 100%;
 }
 
 .content {
@@ -20,7 +21,7 @@
     align-items: center;
     justify-content: center;
     width: 80vw;
-    height: 10vh;
+    height: 5vh;
     color: #0582ff;
     border-radius: 10px;
     margin-top: 2rem;

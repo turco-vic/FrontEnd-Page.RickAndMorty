@@ -153,7 +153,7 @@ export default function Home() {
             ) : (
                 <div className={styles.grid}>
                     {characters.map((char) => (
-                        <CharacterCard key={char.id} character={char} onClick={() => handleCardClick(char)} />
+                        <CharacterCard key={char.id} character={char} onClick={() => handleCardClick(char.name)} />
                     ))}
                 </div>
             )}
